@@ -47,3 +47,41 @@ html {
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .banner-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .banner-title {
+        h1 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .banner-wrapper {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .banner-title {
+        h1 {
+          font-size: 1.75em;
+        }
+      }
+    }
+  }
+}

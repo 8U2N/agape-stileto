@@ -46,3 +46,38 @@
     }
   }
 }
+
+@media screen and (max-width: 1628px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .filter-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery-display-wrapper {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 783px) {
+  .container {
+    display: flex;
+
+    .filter-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery-display-wrapper {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -21,7 +21,6 @@ export default class App extends Component {
         <div className="container">
           <Router>
             <NavBar />
-
             <div className="banner-wrapper">
               <div className="banner-title">
                 <h1>AGAPE STILETO</h1>

@@ -25,3 +25,16 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .home-wrapper {
+    height: 80vh;
+
+    .featured-painting-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}

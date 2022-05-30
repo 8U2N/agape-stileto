@@ -65,3 +65,21 @@
     }
   }
 }
+
+@media screen and (max-width: 898px) {
+  .container {
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .container {
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .container {
+    padding-bottom: 180px;
+  }
+}
