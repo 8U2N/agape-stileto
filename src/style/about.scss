@@ -1,0 +1,67 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
+  margin: 30px;
+
+  .left-column {
+    height: 80vh;
+    font-size: 2em;
+
+    h2 {
+      font-family: "Shadows Into Light", cursive;
+      font-size: 2em;
+      letter-spacing: 3px;
+    }
+
+    p {
+      border: 3px solid burlywood;
+      background-color: seashell;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .image-footer-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background: black;
+
+      img {
+        width: 15vw;
+      }
+    }
+  }
+
+  .right-column {
+    height: 80vh;
+
+    .image-sidebar-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .text-sidebar-wrapper {
+        font-size: 2em;
+        background-color: darkmagenta;
+        color: peachpuff;
+        text-shadow: 3px 2px black;
+        padding: 10px;
+        border-radius: 10px;
+
+        span {
+          color: dodgerblue;
+          font-size: 2em;
+        }
+      }
+
+      img {
+        width: 25vw;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background-color: black;
+      }
+    }
+  }
+}

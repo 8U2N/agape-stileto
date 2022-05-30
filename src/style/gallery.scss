@@ -1,0 +1,48 @@
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .filter-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px;
+    background-color: grey;
+    border: 2px solid grey;
+    box-shadow: rgba(50, 50, 150, 0.3) 1px 3px;
+  }
+}
+
+.gallery-display-wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .gallery-item-display-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+
+    .gallery-item-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+
+      img {
+        width: 225px;
+        height: 225px;
+      }
+
+      .gallery-item-text-wrapper {
+        width: 30vw;
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@mixin standard-btn {
+  font-size: 1.5em;
+  font-family: "montserrat", sans-serif;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: blueviolet;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: magenta;
+    transform: skewY(-20%);
+  }
+}
+
+@mixin standard-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin-bottom: 20px;
+  background-color: seashell;
+  border: 5px solid burlywood;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 40px;
+
+  input {
+    margin: 10px;
+    padding: 10px;
+
+    &:focus {
+      outline: none;
+      transform: translate(0, -10%);
+      box-shadow: 3px 3px 5px 3px grey;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.no-match-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url("../../static/assets/images/backgrounds/no-match.jpg");
+
+  .text-box {
+    background-color: white;
+    width: 40vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      font-size: 1.5em;
+
+      &:hover {
+        cursor: pointer;
+        letter-spacing: 3px;
+        color: palevioletred;
+      }
+    }
+  }
+}
+// <div className="text-box">
+//         <div className="text-wrapper">
+//           <h2>You took a wrong turn somewhere...</h2>
+//           <h2>This page doesn't exist.</h2>
+//         </div>
+//         <div className="link-wrapper">

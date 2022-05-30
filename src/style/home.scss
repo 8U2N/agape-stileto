@@ -1,0 +1,27 @@
+.featured-painting-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .gallery-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+    img {
+      height: 400px;
+      width: 400px;
+    }
+
+    .gallery-item-text-wrapper {
+      width: 30vw;
+      text-align: center;
+      font-family: "Varela Round", sans-serif;
+    }
+  }
+}

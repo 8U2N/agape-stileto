@@ -1,0 +1,45 @@
+.gallery-item-display-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  .gallery-item-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      font-family: "Indie Flower", sans-serif;
+      font-size: 2em;
+      color: black;
+      background-color: seashell;
+      padding: 10px 10px 0px 10px;
+      border: 3px solid burlywood;
+      border-radius: 5px;
+    }
+
+    .gallery-item-text-wrapper {
+      font-size: 1.5em;
+    }
+
+    .item-name-wrapper {
+      font-size: 3em;
+      padding-bottom: 5px;
+      text-align: center;
+      font-family: "Indie Flower", sans-serif;
+    }
+
+    .gallery-item-button-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .link-btn {
+        @include standard-btn();
+      }
+    }
+  }
+}

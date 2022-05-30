@@ -1,0 +1,18 @@
+@media screen and(max-width: 1000) {
+  .container {
+    display: flex;
+
+    .banner-wrapper {
+      height: 1000px;
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+
+      .banner-title {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+      }
+    }
+  }
+}

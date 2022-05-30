@@ -1,0 +1,86 @@
+.gallery-edit-form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .gallery-form-wrapper {
+    @include standard-form;
+  }
+}
+.forms {
+  display: grid;
+  grid-gap: 30px;
+  padding-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  .edit-form {
+    grid-column: 2;
+  }
+
+  .add-form {
+    grid-column: 3;
+  }
+
+  textarea {
+    resize: none;
+    margin: 10px;
+    padding: 10px;
+    width: 185px;
+
+    &:focus {
+      outline: none;
+      transform: translate(0, -10%);
+      box-shadow: 3px 3px 5px 3px grey;
+    }
+  }
+}
+
+.gallery-display-wrapper {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  .delete-button-wrapper {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    a {
+      @include standard-btn;
+      background-color: ghostwhite;
+
+      &:hover {
+        background-color: darkred;
+        font-size: 2em;
+      }
+    }
+  }
+
+  .gallery-item-display-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+
+    .gallery-item-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+
+      .button {
+        @include standard-btn;
+      }
+
+      img {
+        width: 225px;
+        height: 225px;
+      }
+
+      .gallery-item-text-wrapper {
+        width: 30vw;
+        text-align: center;
+        font-family: "Varela Round", sans-serif;
+      }
+    }
+  }
+}

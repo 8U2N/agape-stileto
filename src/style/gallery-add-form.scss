@@ -1,0 +1,12 @@
+.gallery-form-wrapper {
+  @include standard-form;
+
+  .text-field {
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  button {
+    @include standard-btn;
+  }
+}

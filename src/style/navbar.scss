@@ -1,0 +1,27 @@
+.nav-wrapper {
+  width: 100vw;
+  background-color: white;
+
+  .navbar {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    font-size: 2em;
+
+    a {
+      text-decoration: none;
+      font-family: "Grape Nuts", sans-serif;
+      font-weight: 600;
+      font-size: 2.5em;
+
+      &:hover {
+        cursor: pointer;
+        color: magenta;
+      }
+    }
+  }
+}
