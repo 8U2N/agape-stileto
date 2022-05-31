@@ -19,7 +19,9 @@ export default class GalleryInfo extends Component {
 
   getGalleryItem() {
     axios
-      .get(`http://127.0.0.1:5000/painting/get/${this.props.painting.id}`)
+      .get(
+        `https://dashboard.heroku.com/apps/agape-stileto/painting/get/${this.props.painting.id}`
+      )
       .then((response) => {
         console.log("getGalleryItem response:", response);
         this.setState({

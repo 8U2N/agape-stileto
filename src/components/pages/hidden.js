@@ -51,10 +51,13 @@ export default class Hidden extends Component {
   }
 
   deleteClick(item) {
-    fetch(`http://127.0.0.1:5000/painting/delete/${item.id}`, {
-      method: "DELETE",
-      headers: { "content-type": "application/json" },
-    })
+    fetch(
+      `https://dashboard.heroku.com/apps/agape-stileto/painting/delete/${item.id}`,
+      {
+        method: "DELETE",
+        headers: { "content-type": "application/json" },
+      }
+    )
       .then((response) => {
         if (response.ok) {
           console.log("Delete Sucessful!");
@@ -78,7 +81,7 @@ export default class Hidden extends Component {
 
   getGalleryItems() {
     axios
-      .get("http://127.0.0.1:5000/paintings/get")
+      .get("https://dashboard.heroku.com/apps/agape-stileto/paintings/get")
       .then((response) => {
         console.log(response);
         this.setState({
