@@ -147,3 +147,27 @@
     }
   }
 }
+
+@media screen and (max-width: 898px) {
+  .contact-page-wrapper {
+    .hero-container {
+      width: 100vw;
+
+      .contact-page-heading {
+        img {
+          width: 300px;
+        }
+      }
+
+      .contact-form-container {
+        .contact-form-wrapper {
+          .contact-form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}

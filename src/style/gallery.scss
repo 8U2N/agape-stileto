@@ -72,12 +72,28 @@
     .filter-wrapper {
       display: flex;
       justify-content: center;
+
+      .filter-button-wrapper {
+        svg {
+          width: 90%;
+        }
+      }
     }
 
     .gallery-display-wrapper {
       width: 100vw;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+
+      .gallery-item-display-wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .item-name-wrapper {
+          padding: 10px;
+          margin: 10px;
+        }
+      }
     }
   }
 }

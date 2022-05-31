@@ -25,6 +25,7 @@ export default class GalleryAddForm extends Component {
   }
 
   handleAddSubmit(event) {
+    event.preventDefault();
     fetch("http://127.0.0.1:5000/painting/add", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -49,10 +50,9 @@ export default class GalleryAddForm extends Component {
           description: "",
           addStatus: "Painting Added!",
         });
-        return this.mapGalleryItems();
+        return this.getGalleryItems();
       })
       .catch((error) => console.log("Error adding painting...", error));
-    event.preventDefault();
   }
 
   render() {

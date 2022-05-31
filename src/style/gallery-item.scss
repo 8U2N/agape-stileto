@@ -43,3 +43,19 @@
     }
   }
 }
+@media screen and (max-width: 780px) {
+  .featured-painting-wrapper {
+    height: 700px !important;
+    .gallery-item-display-wrapper {
+      .gallery-item-wrapper {
+        .gallery-item-text-wrapper {
+          width: 100vw !important;
+          .item-name-wrapper {
+            margin-top: 70px;
+            padding-top: 70px;
+          }
+        }
+      }
+    }
+  }
+}

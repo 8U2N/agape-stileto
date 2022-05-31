@@ -81,5 +81,18 @@
 @media screen and (max-width: 668px) {
   .container {
     padding-bottom: 180px;
+
+    .hero-container {
+      grid-gap: 5px;
+
+      .image-footer-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        img {
+          width: 25vw;
+        }
+      }
+    }
   }
 }

@@ -30,13 +30,14 @@
   .nav-wrapper {
     display: flex;
     flex-direction: column;
-    height: 12vh;
-    order: 1;
+    height: 18vh;
 
     .navbar {
       height: 40vh;
-      font-size: 1.5em;
-      justify-content: space-between;
+      font-size: 1.25em;
+      justify-content: space-around;
+      margin-left: -10px;
+      margin-right: -20px;
 
       a {
         text-decoration: none;
@@ -48,6 +49,20 @@
           cursor: pointer;
           color: magenta;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-wrapper {
+    height: 12vh;
+    .navbar {
+      height: 12vh;
+      margin-left: 10px;
+
+      a {
+        font-size: 2em;
       }
     }
   }

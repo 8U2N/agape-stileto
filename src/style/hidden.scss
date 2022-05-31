@@ -84,3 +84,17 @@
     }
   }
 }
+
+@media screen and (max-width: 898px) {
+  .gallery-edit-form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .forms {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      padding-left: 5px;
+    }
+  }
+}

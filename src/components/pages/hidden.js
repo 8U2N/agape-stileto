@@ -50,7 +50,7 @@ export default class Hidden extends Component {
     });
   }
 
-  deleteClick(event, item) {
+  deleteClick(item) {
     fetch(`http://127.0.0.1:5000/painting/delete/${item.id}`, {
       method: "DELETE",
       headers: { "content-type": "application/json" },
@@ -74,7 +74,6 @@ export default class Hidden extends Component {
       .catch((error) => {
         console.log("handleDeleteClick error", error);
       });
-    event.preventDefault();
   }
 
   getGalleryItems() {
@@ -108,7 +107,7 @@ export default class Hidden extends Component {
             <a
               className="delete"
               id={item.id}
-              onClick={(event) => this.deleteClick(event, item)}
+              onClick={() => this.deleteClick(item)}
             >
               <FontAwesomeIcon icon={faDumpsterFire} id={item.id} />
             </a>
