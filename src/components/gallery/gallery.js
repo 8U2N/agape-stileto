@@ -28,7 +28,7 @@ export default class Gallery extends Component {
 
   getGalleryItems(filter = null) {
     axios
-      .get("http://127.0.0.1:5000/paintings/get")
+      .get("https://agape-stileto-back1.herokuapp.com/paintings/get")
       .then((response) => {
         console.log(response);
         if (filter) {
