@@ -16,7 +16,7 @@ export default class Home extends Component {
 
   getGalleryItems() {
     axios
-      .get("https://agape-stileto-back1.herokuapp.com/paintings/get")
+      .get("https://agape-stileto-back-2.herokuapp.com/paintings/get")
       .then((response) => {
         console.log(response);
         this.setState({

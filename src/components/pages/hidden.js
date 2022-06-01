@@ -52,7 +52,7 @@ export default class Hidden extends Component {
 
   deleteClick(item) {
     fetch(
-      `https://dashboard.heroku.com/apps/agape-stileto/painting/delete/${item.id}`,
+      `https://agape-stileto-back-2.herokuapp.com/painting/delete/${item.id}`,
       {
         method: "DELETE",
         headers: { "content-type": "application/json" },

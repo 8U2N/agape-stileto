@@ -26,7 +26,7 @@ export default class GalleryAddForm extends Component {
 
   handleAddSubmit(event) {
     event.preventDefault();
-    fetch("http://127.0.0.1:5000/painting/add", {
+    fetch("https://agape-stileto-back-2.herokuapp.com/painting/add", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({

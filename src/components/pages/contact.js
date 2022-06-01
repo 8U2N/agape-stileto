@@ -39,7 +39,7 @@ export default class Contact extends Component {
   }
 
   orderFormSubmit(event) {
-    fetch("https://dashboard.heroku.com/apps/agape-stileto/order/add", {
+    fetch("https://agape-stileto-back-2.herokuapp.com/order/add", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({

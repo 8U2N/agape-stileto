@@ -33,7 +33,7 @@ export default class OrderForm extends Component {
   }
 
   orderFormSubmit() {
-    fetch("http://127.0.0.1:5000/order", {
+    fetch("https://agape-stileto-back-2.herokuapp.com/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -20,7 +20,7 @@ export default class GalleryInfo extends Component {
   getGalleryItem() {
     axios
       .get(
-        `https://dashboard.heroku.com/apps/agape-stileto/painting/get/${this.props.painting.id}`
+        `https://agape-stileto-back-2.herokuapp.com/painting/get/${this.props.painting.id}`
       )
       .then((response) => {
         console.log("getGalleryItem response:", response);
