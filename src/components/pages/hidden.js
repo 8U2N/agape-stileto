@@ -81,7 +81,9 @@ export default class Hidden extends Component {
 
   getGalleryItems() {
     axios
-      .get("https://dashboard.heroku.com/apps/agape-stileto/paintings/get")
+      .get(
+        "https://dashboard.heroku.com/apps/agape-stileto-back-2/paintings/get"
+      )
       .then((response) => {
         console.log(response);
         this.setState({
