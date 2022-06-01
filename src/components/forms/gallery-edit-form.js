@@ -26,7 +26,7 @@ export default class GalleryEditForm extends Component {
   }
 
   handleEditSubmit(event) {
-    fetch(`http://127.0.0.1:5000/painting/update/${this.props.id}`, {
+    fetch(`https://agape-stileto-back1.herokuapp.com/painting/update/${this.props.id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
